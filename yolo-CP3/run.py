@@ -13,10 +13,10 @@ def get_youtube_stream_url(youtube_url):
     return stream_url
 
 # Carregar o modelo treinado
-model = YOLO('yolov8n.pt')  # Substitua pelo caminho para seu modelo treinado
+model = YOLO('best.pt')  # Substitua pelo caminho para seu modelo treinado
 
 # URL da transmissão ao vivo do YouTube
-url = 'https://youtu.be/VOFTpk2O-8U'  # Substitua pelo URL da transmissão ao vivo do YouTube
+url = 'https://www.youtube.com/live/3bf1JDW_50k?si=a-W3gbM4-s0Q3CIm'  # Substitua pelo URL da transmissão ao vivo do YouTube
 stream_url = get_youtube_stream_url(url)
 cap = cv2.VideoCapture(stream_url)
 
